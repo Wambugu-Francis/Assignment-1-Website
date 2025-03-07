@@ -80,9 +80,11 @@ text-align: center;
     font-style: oblique;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
 }
 
 .About{
-    background-image: url(images/Section\ 1\ Bg.jpg);
-                    
+    background-image: url(images/Section\ 1\ Bg.jpg); 
+    opacity: 2;                
 }
+
