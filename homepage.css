@@ -72,19 +72,36 @@ text-align: center;
     color:yellow;
     font-weight: bolder;
     font-size: 150%;
-
+    position: relative;
+    z-index: 2; /* Place content above the overlay */
+    
 }   
 
 .P1{
     font-size: large;
     font-style: oblique;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
+    color:white;
+    z-index: 2; /* Place content above the overlay */
+    color: white; /* Text color */
+    position: relative;
+    
 }
 
 .About{
     background-image: url(images/Section\ 1\ Bg.jpg); 
-    opacity: 2;                
+    position: relative;               
+}
+
+.About::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place it above the background image */
 }
 
